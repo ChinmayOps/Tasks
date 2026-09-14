@@ -4,9 +4,9 @@ import requests
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-
+import os
 # API Configuration
-API_KEY = "ce019f214672ec93e0c50fa7abef262d"  # Get from https://home.openweathermap.org/users/sign_up
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 CITIES = ["London", "New York", "Tokyo", "Dubai", "Sydney"]
 
